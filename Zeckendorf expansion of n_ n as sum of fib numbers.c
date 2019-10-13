@@ -1,34 +1,37 @@
 #include<stdio.h>
 
-int main(){
+int main()
+{
 
-int a,n,b,c,temp;
+        int a,n,b,c,temp;
 
-printf("give number of which fib decomposition is required\n");
-scanf("%d",&n);
+        printf("give number of which fib decomposition is required\n");
+        scanf("%d",&n);
 
-printf("%d",n);
+        printf("%d",n);
 
-c=0;
+        c=0;
 
-while(n>0){
+        while(n>0)
+        {
 
-a=1,b=1;
+                a=1,b=1;
 
-while(b<=n){
-        temp=a;
-        a=b;
-        b=temp+a;
-}
+                while(b<=n)
+                {
+                        temp=a;
+                        a=b;
+                        b=temp+a;
+                }
 
-n=n-a;
-c+=1;
+                n=n-a;
+                c=c+1;
 
-if(c>1) printf(" + ");
-else printf(" = ");
+                if(c>1) printf(" + ");
+                else printf(" = ");
 
-printf("%d",a);
+                printf("%d",a);
 
-}
+        }
 
 }
