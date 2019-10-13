@@ -4,32 +4,40 @@
 // radical of a number is defined as
 // radical(n) = product of distinct primes diving n
 
-int isprime(int n){
+int isprime(int n)
+{
 
-int c=1,i,m=sqrt(n)+1;
+            int c=1,i,m=sqrt(n)+1;
 
-if(n==2||n==3)c=1;
-else{
-if(n%2==0||n%3==0) c=0;
-else{
+            if(n==2||n==3)
+                        c=1;
+            else
+            {
+            if(n%2==0||n%3==0) 
+                        c=0;
+            else
+            {
 
-for(i=5;i<m;i=i+6){
+            for(i=5;i<m;i=i+6)
+            {
 
-if(n%i==0||n%(i+2)==0){
-c=0;
-break;
-}
+            if(n%i==0||n%(i+2)==0)
+            {
+            c=0;
+            break;
+            }
 
-}
+            }
 
-}
+            }
 }
 
 return c;
 
 }
 
-int radical(int n){
+int radical(int n)
+{
 
 int m=sqrt(n)+1,j=1,i=2,k=1;
 
@@ -51,7 +59,7 @@ while(i<=m){
             else i+=1;
             }
 
-k*=n;
+k=k*n;
 
 return k;
 
@@ -67,5 +75,6 @@ scanf("%d",&n);
 rad = radical(n);
 
 printf("radical(%d) = %d",n,rad);
+}
 
 }
