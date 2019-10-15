@@ -10,11 +10,11 @@ int isprime(int n)
             int c=1,i,m=sqrt(n)+1;
 
             if(n==2||n==3)
-                        c=1;
+                c=1;
             else
             {
             if(n%2==0||n%3==0) 
-                        c=0;
+                c=0;
             else
             {
 
@@ -46,7 +46,8 @@ while(i<=m){
             if(isprime(i)==1){
                  if(n%i==0){
 
-                    if(i!=j){
+                    if(i!=j)
+					{
                         k*=i;
                         j=i;
                     }
@@ -77,4 +78,3 @@ rad = radical(n);
 printf("radical(%d) = %d",n,rad);
 }
 
-}
