@@ -1,5 +1,5 @@
-# ALGORITHMS
-
--> Implementation of various known Algorithms.
--> Code to generate various mathematical sequences.
--> Codes of various well known problems to understand Algorithm.
+-> Implementation of various known `Algorithms`.
+    -> `Path finding algorithms`.
+    
+-> Codes related to various `Mathematical Objects`.
+    -> `Code to generate sequences`
