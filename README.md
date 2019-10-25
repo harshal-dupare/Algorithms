@@ -6,4 +6,4 @@
     
  `Issues`
  
-:: Some of the alogorithms are not stable and may behave badly if improper format of input is given.
+:: Some of the algorithms are not stable and may behave badly if improper format of input is given.
